@@ -141,6 +141,11 @@ Refer doc : [security_implementation](security_implementation.docx)
   
   Refer SQL query used to get the medal tally details from the data in Synapse Data Lakehouse : [sql_query_on_data_lakehouse](Total_Medals_Tally.sql)
 
+  ### 5. Corrections:
+  While creating power BI dashboard to analyse individual performance (top individual medalists), it was noted that in the dataset the name of the top medalist who had won most olympics medal was improperly maintained, the actual name is (Michael Fred Phelps II (USA)) but in the dataset it was maintained as (Michael II), hence we have made this change in the final enriched data.
+
+  Refer databrick notebook where this change was implemented: [Corrections](databricks_notebooks/Corrections.html)
+
 ## Conclusion
 This project has been built to analyse and get detailed insists of the summer Olympics historical data (1932 - 2024) by enriching and transforming the raw dataset into a star schema data model with help of technologies like apache spark, data pipelines, datalake etc inside Azure cloud environment and create data lakehouse to analyse the data for insists using SQL, also to create Power BI dashboard which provides a detailed analysis of the complete summer Olymplics historical data.
 
